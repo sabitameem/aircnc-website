@@ -1,7 +1,7 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import { FcGoogle } from "react-icons/fc";
-import { useContext} from "react";
+import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { TbFidgetSpinner } from "react-icons/tb";
 
@@ -81,7 +81,7 @@ const SignUp = () => {
         toast.error(err.message);
       });
   };
-  
+
   return (
     <div className="flex justify-center items-center min-h-screen">
       <div className="flex flex-col max-w-md p-6 rounded-md sm:p-10 bg-gray-100 text-gray-900">
